@@ -1,0 +1,41 @@
+GoLang:
+
+* GoLang is complied programming language
+* Go tool can run file directly, without VM like JVM for Java
+* Go can be used to build System apps to web apps - cloud
+* Go is already in production and many companies are using it like startups, Google, Uber etc.
+* Go is really fast compared to Java / Python
+* Go helps in reducing the servers size like if Java uses 6 machines then Go can reduce to 2 machines
+* Go is kind of Yes and No for object oriented, it does not have method overloading / overriding, classes, methods. It has structs which is similar to classes in Java, what you see on the screen is the code i.e, its a straight language.
+* Go does not have try catch, and it does not need it too, lexer does a lot of work for Go
+* No Semicolons
+
+
+Types:
+* Go is case inSensitive almost
+* variable type should be known in advance
+* Everything is Type like in javascript everything is object
+* String, Bool, Integer, Floating and Complex
+* Array, Slices, Maps, Structs and Pointers
+
+
+Build:
+* command to build windows exe file : GOOS="windows" go build
+
+Memory management: https://pkg.go.dev/runtime
+* Memory allocation and de-allocation happens automatically in GoLang unlike other languages
+* new() and make() methods are used to allocate memory
+* new() --> Allocate memory but no INIT (not initialized)
+		--> you will get a memory address
+		--> zeroed storage (which means you cannot put any data initially)
+* make()--> Allocate memory but and INIT (initialized)
+		--> you will get a memory address
+		--> non-zeroed storage (which means you can put any data initially too)
+* GC (Garbage Collection) happens automatically
+* Anything out of scope becomes nil and will be available for GC
+
+
+Pointers :
+
+* * is used to define pointers
+* & is used as reference of memory location for defined variable
